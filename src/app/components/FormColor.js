@@ -6,12 +6,14 @@ import ButtonGo from './ButtonGo'
 
 let input_type = {
     "up": {
-        "header": "UP",
-        "color": "red"
+        "id": "leftSide",
+        "header": "Цвет слева",
+        "color": "555555"
     },
     "down": {
-        "header": "DOWN",
-        "color": "blue"
+        "id": "rigthSide",
+        "header": "Цвет справа",
+        "color": "222222"
     }
 };
 
@@ -24,9 +26,9 @@ export default class FormColor extends React.Component {
                     style={[{
                         "cssText": `
                             body {
-                                background: -webkit-linear-gradient(left, ${input_type.up.color} 50%, ${input_type.down.color} 50%);
-                                background: -o-linear-gradient(left, ${input_type.up.color} 50%, ${input_type.down.color} 50%);
-                                background: -moz-linear-gradient(left, ${input_type.up.color} 50%, ${input_type.down.color} 50%);
+                                background: -webkit-linear-gradient(left, #${input_type.up.color} 50%, #${input_type.down.color} 50%);
+                                background: -o-linear-gradient(left, #${input_type.up.color} 50%, #${input_type.down.color} 50%);
+                                background: -moz-linear-gradient(left, #${input_type.up.color} 50%, #${input_type.down.color} 50%);
                             }
                         `
                     }]}

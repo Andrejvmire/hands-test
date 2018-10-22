@@ -9,7 +9,7 @@ export default class InputColor extends React.Component {
                     <div className="input-group-prepend">
                         <div className="input-group-text">#</div>
                     </div>
-                    <input id={this.props.data.id} className="form-control" placeholder="rrggbb" defaultValue={this.props.data.color} required />
+                    <input id={this.props.data.id} className="form-control" placeholder="rrggbb" defaultValue={this.props.data.color} onKeyUp={this.props.onkeyup} required />
                 </div>
             </div>
         );
